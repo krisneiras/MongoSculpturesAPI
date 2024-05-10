@@ -22,7 +22,7 @@ Built with:
 
 - ### Step 2 Create and connect your DataBase
 
-In this project we created our DB with mysql, so you will have to create your database and call it sculptures and another one for the tests called sculptures_test.
+In this project we created our DB with MongoDB Atlas, so you will have to create your database and call it sculptures(This first database for what we know you dont have to create it manually, it will be created once you run the server) and another one for the tests called sculptures_test.
 
 In the files you will see an .env_example, you rename it to .env and enter your real information:
 

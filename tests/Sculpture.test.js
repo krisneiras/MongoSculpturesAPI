@@ -51,7 +51,7 @@ describe('Testing CRUD in sculptures API', ()=>{
         });
     
         afterAll(async () =>{
-            await SculptureModel.destroy({where: {title:'test'}});
+            await SculptureModel.deleteMany({title:'test'});
         });
     })
     
@@ -74,7 +74,7 @@ describe('Testing CRUD in sculptures API', ()=>{
         
     })
     afterAll(async () =>{
-        await SculptureModel.destroy({where: {title:'test'}});
+        await SculptureModel.deleteMany({title:'test'});
     });
     })
     
@@ -100,10 +100,10 @@ describe('Testing CRUD in sculptures API', ()=>{
     
     });
     
-    afterAll( () =>{
-        connection_db.close();
+/*     afterAll( () =>{
+        connection_db.close();   Verificar metodo en mongoose
         server.close();
-    });
+    }); */
     
     })
     
